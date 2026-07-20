@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>売上別添削会 まとめ｜2026.7.20</title>
+<style>
+  :root{
+    --bg:#faf7f2;
+    --card:#ffffff;
+    --ink:#3a3330;
+    --sub:#8a7f78;
+    --accent:#c9705a;
+    --accent-soft:#f6e3dd;
+    --gold:#b98d4f;
+    --line:#eee4da;
+    --green:#5f8d6b;
+    --green-soft:#e6efe8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.9;
+    padding:40px 16px 80px;
+  }
+  .wrap{max-width:820px;margin:0 auto;}
+  header{
+    text-align:center;
+    margin-bottom:48px;
+  }
+  .badge{
+    display:inline-block;
+    background:var(--accent-soft);
+    color:var(--accent);
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.12em;
+    padding:6px 18px;
+    border-radius:999px;
+    margin-bottom:16px;
+  }
+  h1{
+    font-size:28px;
+    font-weight:800;
+    letter-spacing:.04em;
+    margin-bottom:10px;
+  }
+  .meta{color:var(--sub);font-size:14px;letter-spacing:.06em;}
+  .lead{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:22px 26px;
+    margin-bottom:40px;
+    font-size:15px;
+    color:#5a5049;
+  }
+  .toc{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:24px 28px;
+    margin-bottom:48px;
+  }
+  .toc h2{font-size:15px;letter-spacing:.15em;color:var(--gold);margin-bottom:14px;}
+  .toc ol{padding-left:22px;font-size:15px;}
+  .toc li{margin-bottom:6px;}
+  .toc a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--sub);}
+  .toc a:hover{color:var(--accent);}
+  section{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:32px 34px;
+    margin-bottom:32px;
+  }
+  .num{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:34px;height:34px;
+    background:var(--accent);
+    color:#fff;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:800;
+    margin-right:12px;
+    flex-shrink:0;
+  }
+  section h2{
+    display:flex;
+    align-items:center;
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:20px;
+    letter-spacing:.03em;
+  }
+  section h3{
+    font-size:15px;
+    color:var(--accent);
+    margin:22px 0 8px;
+    letter-spacing:.05em;
+  }
+  section p{font-size:15px;margin-bottom:12px;}
+  ul.points{
+    list-style:none;
+    margin:12px 0;
+  }
+  ul.points li{
+    position:relative;
+    padding-left:22px;
+    font-size:15px;
+    margin-bottom:10px;
+  }
+  ul.points li::before{
+    content:"";
+    position:absolute;
+    left:4px;top:13px;
+    width:8px;height:8px;
+    border-radius:50%;
+    background:var(--accent);
+    opacity:.7;
+  }
+  .quote{
+    background:var(--accent-soft);
+    border-left:4px solid var(--accent);
+    border-radius:0 12px 12px 0;
+    padding:14px 20px;
+    margin:16px 0;
+    font-size:15px;
+    font-weight:700;
+    color:#8f4b3a;
+  }
+  .tip{
+    background:var(--green-soft);
+    border-radius:12px;
+    padding:14px 20px;
+    margin:16px 0;
+    font-size:14px;
+    color:#3f5d47;
+  }
+  .tip strong{color:var(--green);}
+  .takeaway{
+    background:linear-gradient(135deg,#fdf6ef,#f6e9dc);
+    border:1px solid #eadbc8;
+    border-radius:20px;
+    padding:32px 34px;
+  }
+  .takeaway h2{
+    display:flex;align-items:center;
+    font-size:20px;font-weight:800;margin-bottom:18px;
+    color:var(--gold);
+  }
+  .takeaway ul{list-style:none;}
+  .takeaway li{
+    position:relative;
+    padding-left:26px;
+    font-size:15px;
+    margin-bottom:12px;
+    font-weight:600;
+  }
+  .takeaway li::before{
+    content:"✓";
+    position:absolute;left:0;top:0;
+    color:var(--gold);
+    font-weight:800;
+  }
+  footer{
+    text-align:center;
+    color:var(--sub);
+    font-size:12px;
+    margin-top:48px;
+    letter-spacing:.08em;
+  }
+  @media(max-width:600px){
+    section{padding:24px 20px;}
+    h1{font-size:22px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="badge">売上別 添削会</div>
+  <h1>授業まとめレポート</h1>
+  <p class="meta">2026年7月20日開催｜少人数・アーカイブなし回</p>
+</header>
+
+<div class="lead">
+  今回は売上30万〜50万円台の受講生向けの少人数回。質問ベースの雑談形式で進行しながら、<strong>「売れる商品の考え方」「2店舗目・新商品展開」「再販戦略」「税理士とお金まわり」「モヤモヤ・迷惑客への対処法」</strong>など、次のステージに進むための実践的なテーマが幅広く語られました。
+</div>
+
+<div class="toc">
+  <h2>目 次</h2>
+  <ol>
+    <li><a href="#s1">3Dプリンター導入の検討ポイント</a></li>
+    <li><a href="#s2">売れる商品の考え方</a></li>
+    <li><a href="#s3">2店舗目・新商品展開のヒント</a></li>
+    <li><a href="#s4">これからのハンドメイド業界と「売る力」</a></li>
+    <li><a href="#s5">再販の戦略</a></li>
+    <li><a href="#s6">キャプションとの付き合い方</a></li>
+    <li><a href="#s7">税理士の選び方とお金の管理</a></li>
+    <li><a href="#s8">迷惑客・クレームへの対応</a></li>
+    <li><a href="#s9">モヤモヤしたときの切り替え方</a></li>
+  </ol>
+</div>
+
+<section id="s1">
+  <h2><span class="num">1</span>3Dプリンター導入の検討ポイント</h2>
+  <p>講師自身が4店舗目（新事業）として3Dプリンターの購入を検討中。機種選びで悩んでいるリアルな思考プロセスが共有されました。</p>
+  <ul class="points">
+    <li>3Dプリンターには大きく2種類ある：よく見る<strong>プラスチック（フィラメント）タイプ</strong>と、ツヤツヤで可愛い<strong>レジンタイプ</strong>。</li>
+    <li>レジンタイプは見た目が可愛いが、ほぼ海外製。日本語の説明書やサポートがなく、「数週間で壊れた」というレビューもあり、約30万円の投資としてはリスクが高い。</li>
+    <li>結論の方向性：<strong>みんなが使っている定番機種を選ぶ</strong>。情報が多く、困ったときにすぐ調べられる・聞ける。</li>
+  </ul>
+  <div class="tip"><strong>ポイント：</strong>CapCutやApple製品と同じ理屈。ユーザーが多いツールは情報量が多く、トラブル時の解決が早い。珍しい機材をあえて選ぶメリットは少ない。</div>
+</section>
+
+<section id="s2">
+  <h2><span class="num">2</span>売れる商品の考え方</h2>
+  <h3>「自分が絶対欲しい」は最強のリサーチ</h3>
+  <p>講師が3Dプリンターで作りたいのは「ズボンの裾を留めるアイテム」。自分が毎日困っていて、すでに類似品をお金を出して買っている＝<strong>同じ悩みを持つ人が確実に存在する</strong>という確信につながっています。</p>
+  <div class="quote">「私がこんなにも欲しいと思うからには、みんなも欲しいと思うはず」</div>
+  <h3>「可愛い」だけでは買われない</h3>
+  <ul class="points">
+    <li><strong>悩み解決 × 可愛い</strong>が最強の組み合わせ。可愛いだけだと「可愛いけど要らない」「可愛いけど高い」で終わってしまう。</li>
+    <li>「こういう時も使える」「これにも使える」という<strong>購入の言い訳（理由）が1つあるだけで、購入ハードルは大きく下がる</strong>。</li>
+  </ul>
+  <h3>リサーチの目線</h3>
+  <ul class="points">
+    <li>PinterestやInstagramで「バッグ」「キーホルダー」などカテゴリ名で検索するのではなく、<strong>好きなジャンルのインテリアやファッションの写真</strong>から「暮らしの中でこれがあったらいいのに」を探す。</li>
+    <li>「作りたいものを作る」ではなく「<strong>今売れている商品を徹底リサーチして、それを3Dプリンターで作れないか</strong>」と考える視点も有効（例：スマホスタンド、スマホカバー）。</li>
+  </ul>
+  <div class="tip"><strong>お金に働いてもらう視点：</strong>3Dプリンターは最初の設計だけ手間がかかるが、あとは機械が作ってくれる。「自分の手を使わずに商品ができる仕組み」として捉えると投資価値が見えてくる。</div>
+</section>
+
+<section id="s3">
+  <h2><span class="num">3</span>2店舗目・新商品展開のヒント</h2>
+  <h3>受講生の相談：メンズ向けポケットチーフ</h3>
+  <ul class="points">
+    <li>ポケットチーフを持つ層は上品でお金に余裕がある可能性が高く、<strong>単価を上げやすい</strong>。</li>
+    <li>ただし「お金持ちそうな男性が欲しがるアカウント」の世界観づくりが必要になる。</li>
+    <li>発展案：ポケットチーフ単体ではなく<strong>「女性から男性へのギフトショップ」</strong>として展開。ネクタイ・ハンカチとのセット販売も好相性。</li>
+    <li>既存のスマホショルダー店は女性客が多いので、<strong>父の日・バレンタインなどのタイミングでテスト販売</strong>すれば、「自分の分と一緒に買おう」という流れが作れる。</li>
+    <li>まずは出してみて反応を見てから決める。作るのも早い（約10分）ならなおさら試す価値あり。</li>
+  </ul>
+  <h3>複数店舗を持つメリット</h3>
+  <ul class="points">
+    <li>1店舗だけだと売上に<strong>一喜一憂・執着</strong>しがち。複数あればどれかの売上が悪くても悩んでいる暇がなく、行動し続けられる。</li>
+    <li>学ぶ前に作った1店舗目より、<strong>売り方を学んだ今作る2店舗目のほうが売りやすい商品設計にできる</strong>可能性がある。</li>
+  </ul>
+  <h3>売れる商品か、作りたい商品か</h3>
+  <p>すでに売上が立っている（30〜50万円台の）人なら、<strong>ときめきを感じる商品に挑戦するのも十分あり</strong>。「楽しそう」という気持ちは継続の大きな原動力になる。</p>
+</section>
+
+<section id="s4">
+  <h2><span class="num">4</span>これからのハンドメイド業界と「売る力」</h2>
+  <ul class="points">
+    <li>3Dプリンター、アクリルカッター、刺繍機など<strong>技術がなくても作れる機械</strong>がどんどん増えている。</li>
+    <li>暮らし系・インテリア系インフルエンサーなど、<strong>「Instagramを伸ばすのがうまい人たち」がハンドメイド的なジャンルに参入</strong>してきている（例：Threadsで話題のビーズ販売者も元・暮らし系発信者）。</li>
+    <li>純粋なハンドメイド作家として始めた人は、今後Instagramを伸ばすのが難しくなっていく可能性がある。</li>
+  </ul>
+  <div class="quote">「どれだけ商品が良くても、どれだけ技術があっても、売るのがうまい人に負けてしまう。だから――売るのがうまくなりましょう」</div>
+</section>
+
+<section id="s5">
+  <h2><span class="num">5</span>再販の戦略</h2>
+  <ul class="points">
+    <li><strong>秒で売り切れることが確定している回</strong>：最初から出せる限界の数を「30個限定」のようにドンと出して売り切るほうがよい。</li>
+    <li><strong>売り切れるか怪しい回</strong>：数を少なめに出して、再販で動きを作るほうが効果的。</li>
+    <li>毎回再販していると、ずっと見ているフォロワーは「どうせまた再販するでしょ」という心理になり、購入の緊急性が薄れる。</li>
+    <li>「もう買えないかもしれない」というお店のほうが買いたくなる。<strong>やり方を毎回変えることで飽きずについてきてもらえる</strong>。</li>
+    <li>再販するか迷ったら：欲しい人がたくさんいる＝飽きられていない証拠なので再販してOK。何度も再販が続いているなら、<strong>次回から最初の数量を増やして</strong>調整する。事前に温度感を測れるようになることが大事。</li>
+  </ul>
+</section>
+
+<section id="s6">
+  <h2><span class="num">6</span>キャプションとの付き合い方</h2>
+  <ul class="points">
+    <li>販売会前の時期は、認知目的のリールでも<strong>販売会告知キャプションのコピペでOK</strong>。講師自身も毎回コピペ運用。</li>
+    <li>キャプションは「書いたほうがいいけれど、そこに時間をかけて頑張る場所ではない」。<strong>余力があるならストーリーズを優先</strong>すべき。</li>
+    <li>キャプション作成はClaudeなどの<strong>AIに考えてもらう</strong>のも手。</li>
+  </ul>
+</section>
+
+<section id="s7">
+  <h2><span class="num">7</span>税理士の選び方とお金の管理</h2>
+  <h3>選び方の基準</h3>
+  <ul class="points">
+    <li>まず<strong>自分の目的を明確に</strong>する：確定申告だけ頼みたいのか、節税したいのか、利益目標に向けて相談しながら進めたいのか。</li>
+    <li>ハンドメイド・物販・小売業に強い税理士を探す。ただし「〇〇専門」は言ったもの勝ちの面もあるので、<strong>実際に話を聞きに行って相性を確かめる</strong>のが大事。</li>
+    <li>対応が雑だったり「なめられている」と感じたら、お金を払ってまで頼む必要はない。合わなければやめてよい。</li>
+    <li>知り合いの経営者が契約している税理士を紹介してもらうのも有力な方法（講師も紹介経由）。</li>
+  </ul>
+  <h3>そもそも税理士は必要か</h3>
+  <ul class="points">
+    <li>ハンドメイドはお金の流れがシンプル（入り：BASE・対面販売／出：材料費・広告費）。<strong>売上100万円程度なら税理士なしでも対応可能</strong>という話も。</li>
+    <li>AIを活用すれば確定申告は自力でできる：「完璧に確定申告できるように1ステップずつ案内して」と依頼し続ける。役所の書類も<strong>写真を撮って「これは何の書類？何を書けばいい？」と聞く</strong>。</li>
+    <li>重要な判断は<strong>複数のAI（Claude・Gemini・ChatGPTなど）に同じ質問をして答えを突き合わせる</strong>。異なる回答が出たら「他のAIはこう言っているが、なぜあなたはこう考える？」と議論させると信憑性が上がる。</li>
+  </ul>
+</section>
+
+<section id="s8">
+  <h2><span class="num">8</span>迷惑客・クレームへの対応</h2>
+  <h3>実例と対処</h3>
+  <ul class="points">
+    <li><strong>パクリ報告DM</strong>（「同じ内容のリールを見ました。残念です。一応報告しました」）→ 即ブロックせず放置も選択肢。相手にする価値のないものは深追いしない。</li>
+    <li><strong>タメ口・馴れ馴れしいDM</strong> → ストーリーズへの反応はハートやスタンプのみで返し、<strong>会話が始まらないようにして距離を作る</strong>。質問には丁寧に返す。「DMは1対1＝丁寧に」を貫く。</li>
+    <li><strong>開封後の雑な返品</strong> → 対策として<strong>「返品は未開封に限る」と明記</strong>する。</li>
+    <li><strong>買う買う詐欺</strong>（買うと言い続けて買わない人） → 徐々に壁を作ってよい。</li>
+  </ul>
+  <h3>心構え</h3>
+  <ul class="points">
+    <li>お客さんが増えるほど「やばい人」に当たる確率も上がる。それが普通だと知っておく。</li>
+    <li>自分が買い物をするときも<strong>「向こう側に人がいる」ことを忘れない</strong>（講師自身、海外仕入れサイトで返金依頼をしたらブロックされた経験談も）。</li>
+  </ul>
+</section>
+
+<section id="s9">
+  <h2><span class="num">9</span>モヤモヤしたときの切り替え方</h2>
+  <ul class="points">
+    <li><strong>人に話して笑い話にする</strong>：スタッフや友人にマシンガントークで話し、何度も話して「面白い話」に精度を高めていく。</li>
+    <li><strong>笑い話にできない小さいモヤモヤは意識的に忘れる</strong>：「他人から聞いたらしょうもない話」レベルのものは「忘れよう」と決めてなかったことにする。</li>
+    <li><strong>悪口やアンチはスクショだけ取っておく</strong>：悔しいまま終わらせず、いつか笑い話や仕事のネタ（種）にする。</li>
+    <li><strong>AIに話すときはひと工夫</strong>：AIは肯定ばかり／解決したがりになりがち。「寄り添わないで」「公平に見て」「褒めないで」と前置きすると、ちょうどいい壁打ち相手になる。</li>
+  </ul>
+</section>
+
+<div class="takeaway">
+  <h2>今日の重要ポイントまとめ</h2>
+  <ul>
+    <li>機材・ツールは「みんなが使っている定番」を選ぶ。情報量がサポートになる。</li>
+    <li>売れる商品＝「自分が心底欲しい悩み解決アイテム」×「購入の言い訳が作れる商品」。</li>
+    <li>2店舗目は、既存客層からの導線（ギフト需要・イベント）を活かして小さくテスト。</li>
+    <li>商品力より売る力。これからの時代は「売るのがうまくなる」ことが最大の防御。</li>
+    <li>再販は毎回しない。売り切れ確実なら限定数をドンと、迷うなら少なめ＋再販で。</li>
+    <li>キャプションよりストーリーズ。手を抜く場所を決めて、力を入れる場所に集中する。</li>
+    <li>お金まわりは目的を明確に。小規模ならAI活用で自力申告も可能。複数AIで検証を。</li>
+    <li>迷惑客には距離を作る仕組み（未開封限定・スタンプ返し）で消耗を防ぐ。</li>
+    <li>モヤモヤは「笑い話」か「ネタ」に変換。できないものは忘れると決める。</li>
+  </ul>
+</div>
+
+<footer>売上別添削会 まとめレポート｜2026.7.20</footer>
+
+</div>
+</body>
+</html>
